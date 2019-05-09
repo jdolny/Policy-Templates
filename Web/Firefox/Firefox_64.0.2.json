@@ -1,0 +1,63 @@
+{
+   "Name":"Install Firefox 64.0.2",
+   "Description":"This policy installs Firefox 64.0.2",
+   "Instructions":"",
+   "Requirements":"No requirements, all files are downloaded and imported during policy import.",
+   "Guid":"3c10309d-4a4e-44bd-98bd-18f82d49672f",
+   "Hash":null,
+   "Frequency":1,
+   "Trigger":0,
+   "SubFrequency":0,
+   "CompletedAction":0,
+   "RemoveInstallCache":true,
+   "ExecutionType":0,
+   "ErrorAction":0,
+   "IsInventory":0,
+   "IsLoginTracker":false,
+   "IsApplicationMonitor":false,
+   "FrequencyMissedAction":0,
+   "LogLevel":0,
+   "SkipServerResult":false,
+   "CommandModules":[
+      {
+         "DisplayName":"Firefox 64.0.2",
+         "Command":"firefox.exe",
+         "Arguments":"/S",
+         "Order":0,
+         "Timeout":5,
+         "RedirectOutput":false,
+         "RedirectError":false,
+         "SuccessCodes":"0",
+         "UploadedFiles":[
+
+         ],
+         "ExternalFiles":[
+            {
+               "FileName":"firefox.exe",
+               "Url":"https://ftp.mozilla.org/pub/firefox/releases/64.0.2/win64/en-US/Firefox%20Setup%2064.0.2.exe",
+               "Sha256Hash":"306EF5217D7D0929F8874C58BDF6EB1AD5C2B1A305AA60ECF502EB1A0ADB1AFE",
+               "ModuleGuid":"bbec889a-4ba0-4db4-b8b1-e6e84c0cadb7"
+            }
+         ],
+         "WorkingDirectory":"",
+         "Description":"",
+         "Guid":"bbec889a-4ba0-4db4-b8b1-e6e84c0cadb7"
+      }
+   ],
+   "FileCopyModules":[
+
+   ],
+   "PrinterModules":[
+
+   ],
+   "ScriptModules":[
+
+   ],
+   "SoftwareModules":[
+
+   ],
+   "WuModules":[
+
+   ],
+   "WuType":0
+}

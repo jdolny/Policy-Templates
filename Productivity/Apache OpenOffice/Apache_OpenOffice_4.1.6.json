@@ -1,0 +1,63 @@
+{
+   "Name":"Install Apache OpenOffice 4.1.6",
+   "Description":"This policy installs Apache OpenOffice 4.1.6.",
+   "Instructions":"No further actions are required.  This policy downloads all required external files and sets up the appropriate modules.",
+   "Requirements":"None.",
+   "Guid":"5b2df47f-03c8-4189-ab42-570d8e91fc81",
+   "Hash":null,
+   "Frequency":1,
+   "Trigger":0,
+   "SubFrequency":0,
+   "CompletedAction":0,
+   "RemoveInstallCache":true,
+   "ExecutionType":0,
+   "ErrorAction":0,
+   "IsInventory":2,
+   "IsLoginTracker":false,
+   "IsApplicationMonitor":false,
+   "FrequencyMissedAction":0,
+   "LogLevel":0,
+   "SkipServerResult":false,
+   "CommandModules":[
+      {
+         "DisplayName":"Apache OpenOffice 4.1.6",
+         "Command":"Apache_OpenOffice_4.1.6_Win_x86_install_en-US.exe",
+         "Arguments":"/S /v /qn",
+         "Order":0,
+         "Timeout":20,
+         "RedirectOutput":false,
+         "RedirectError":false,
+         "SuccessCodes":"0,1641,3010",
+         "UploadedFiles":[
+
+         ],
+         "ExternalFiles":[
+            {
+               "FileName":"Apache_OpenOffice_4.1.6_Win_x86_install_en-US.exe",
+               "Url":"https://sourceforge.net/projects/openofficeorg.mirror/files/4.1.6/binaries/en-US/Apache_OpenOffice_4.1.6_Win_x86_install_en-US.exe/download",
+               "Sha256Hash":"e1af0f097f24dac6fbfb7af2558d4d6fafa994158f1a592b485a0ddc7e6c1f47",
+               "ModuleGuid":"252aa6b8-6fac-4450-bca6-a9ef3d1cb400"
+            }
+         ],
+         "WorkingDirectory":"",
+         "Description":"",
+         "Guid":"252aa6b8-6fac-4450-bca6-a9ef3d1cb400"
+      }
+   ],
+   "FileCopyModules":[
+
+   ],
+   "PrinterModules":[
+
+   ],
+   "ScriptModules":[
+
+   ],
+   "SoftwareModules":[
+
+   ],
+   "WuModules":[
+
+   ],
+   "WuType":0
+}

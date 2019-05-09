@@ -1,0 +1,63 @@
+{
+   "Name":"Notepad Plus Plus 7.6.3",
+   "Description":"Installs Notepad++ 7.6.3",
+   "Instructions":"No further actions are required. This policy downloads all required external files and sets up the appropriate modules.",
+   "Requirements":"None.",
+   "Guid":"fdd09f74-5f13-4fb0-ac22-ef2cb78abd9e",
+   "Hash":null,
+   "Frequency":1,
+   "Trigger":0,
+   "SubFrequency":0,
+   "CompletedAction":0,
+   "RemoveInstallCache":true,
+   "ExecutionType":0,
+   "ErrorAction":0,
+   "IsInventory":0,
+   "IsLoginTracker":false,
+   "IsApplicationMonitor":false,
+   "FrequencyMissedAction":0,
+   "LogLevel":0,
+   "SkipServerResult":false,
+   "CommandModules":[
+      {
+         "DisplayName":"Notepad Plus Plus 7.6.3",
+         "Command":"npp763.exe",
+         "Arguments":"/S",
+         "Order":0,
+         "Timeout":5,
+         "RedirectOutput":false,
+         "RedirectError":false,
+         "SuccessCodes":"0",
+         "UploadedFiles":[
+
+         ],
+         "ExternalFiles":[
+            {
+               "FileName":"npp763.exe",
+               "Url":"https://notepad-plus-plus.org/repository/7.x/7.6.3/npp.7.6.3.Installer.exe",
+               "Sha256Hash":"48af4c024131f9d76927f301c7489d44cffb50acd92e1b05264389d1880bba81",
+               "ModuleGuid":"dbb285d7-f151-43cc-b020-d53fd6448e75"
+            }
+         ],
+         "WorkingDirectory":"",
+         "Description":"",
+         "Guid":"dbb285d7-f151-43cc-b020-d53fd6448e75"
+      }
+   ],
+   "FileCopyModules":[
+
+   ],
+   "PrinterModules":[
+
+   ],
+   "ScriptModules":[
+
+   ],
+   "SoftwareModules":[
+
+   ],
+   "WuModules":[
+
+   ],
+   "WuType":0
+}

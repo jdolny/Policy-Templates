@@ -1,0 +1,119 @@
+{
+   "Name":"Condition Collection",
+   "Description":"This policy contains a collection of various scripts that can be used as conditions for other policies.",
+   "Instructions":"[skip-policy-create]\r\n[generate-policy-guid]\r\n[generate-module-guid]",
+   "Requirements":"None",
+   "Guid":"0408fe20-738f-4ecc-a5e8-8dd3f89ad30c",
+   "Hash":null,
+   "Frequency":0,
+   "Trigger":0,
+   "SubFrequency":0,
+   "CompletedAction":0,
+   "RemoveInstallCache":false,
+   "ExecutionType":0,
+   "ErrorAction":0,
+   "IsInventory":0,
+   "IsLoginTracker":false,
+   "IsApplicationMonitor":false,
+   "FrequencyMissedAction":0,
+   "LogLevel":0,
+   "SkipServerResult":false,
+   "CommandModules":[
+
+   ],
+   "FileCopyModules":[
+
+   ],
+   "PrinterModules":[
+
+   ],
+   "ScriptModules":[
+      {
+         "DisplayName":"Condition - Is 32-bit",
+         "Arguments":"",
+         "Order":0,
+         "Timeout":0,
+         "RedirectOutput":false,
+         "RedirectError":false,
+         "ScriptType":0,
+         "SuccessCodes":"-1",
+         "AddToInventory":false,
+         "IsCondition":true,
+         "WorkingDirectory":"",
+         "ScriptContents":"$arch=(Get-WmiObject Win32_OperatingSystem).OSArchitecture\r\nif($arch -eq \"32-bit\")\r\n{\r\n    exit -1\r\n}\r\n",
+         "Description":"",
+         "Guid":"7353ee8d-9a4f-400d-a44a-d3f95eb64629"
+      },
+      {
+         "DisplayName":"Condition - Is 64-bit",
+         "Arguments":"",
+         "Order":0,
+         "Timeout":0,
+         "RedirectOutput":false,
+         "RedirectError":false,
+         "ScriptType":0,
+         "SuccessCodes":"-1",
+         "AddToInventory":false,
+         "IsCondition":true,
+         "WorkingDirectory":"",
+         "ScriptContents":"$arch=(Get-WmiObject Win32_OperatingSystem).OSArchitecture\r\nif($arch -eq \"64-bit\")\r\n{\r\n    exit -1\r\n}\r\n",
+         "Description":"",
+         "Guid":"4b6dd8b8-78fa-43da-aa95-c9d808ba4534"
+      },
+      {
+         "DisplayName":"Condition - Is Windows 10",
+         "Arguments":"",
+         "Order":0,
+         "Timeout":0,
+         "RedirectOutput":false,
+         "RedirectError":false,
+         "ScriptType":0,
+         "SuccessCodes":"-1",
+         "AddToInventory":false,
+         "IsCondition":true,
+         "WorkingDirectory":"",
+         "ScriptContents":"$caption = (Get-WmiObject -Class Win32_OperatingSystem).caption;\r\nif($caption -like '*windows 10*')\r\n{\r\n    exit -1\r\n}",
+         "Description":"",
+         "Guid":"25ba5cb7-733d-473a-99b2-6b470ba26e4a"
+      },
+      {
+         "DisplayName":"Condition - Is Windows 8",
+         "Arguments":"",
+         "Order":0,
+         "Timeout":0,
+         "RedirectOutput":false,
+         "RedirectError":false,
+         "ScriptType":0,
+         "SuccessCodes":"-1",
+         "AddToInventory":false,
+         "IsCondition":true,
+         "WorkingDirectory":"",
+         "ScriptContents":"$caption = (Get-WmiObject -Class Win32_OperatingSystem).caption;\r\nif($caption -like '*windows 8*')\r\n{\r\n    exit -1\r\n}",
+         "Description":"",
+         "Guid":"939e926b-1964-409f-b223-c7a061d8f556"
+      },
+      {
+         "DisplayName":"Condition - No Logged In Users",
+         "Arguments":"",
+         "Order":0,
+         "Timeout":0,
+         "RedirectOutput":false,
+         "RedirectError":false,
+         "ScriptType":0,
+         "SuccessCodes":"-1",
+         "AddToInventory":false,
+         "IsCondition":true,
+         "WorkingDirectory":"",
+         "ScriptContents":"$activeUsers = $(query user 2>&1)\r\nif($activeUsers.Exception -match 'no user exists')\r\n{\r\n    exit -1\r\n}",
+         "Description":"",
+         "Guid":"4a7afa5b-b2e6-4058-b26a-332b08825fb4"
+      }
+   ],
+   "SoftwareModules":[
+
+   ],
+   "WuModules":[
+
+   ],
+   "WuType":0
+}
